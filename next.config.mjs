@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
+		loader: 'akamai',
+		path: '',
 		remotePatterns: [
 			{
 				protocol: 'https',
@@ -9,6 +11,7 @@ const nextConfig = {
 			},
 		],
 	},
+	assetPrefix: './',
 };
 
 module.exports = nextConfig;
